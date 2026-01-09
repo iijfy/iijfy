@@ -1,0 +1,79 @@
+username: iijfy
+
+featured:
+  - HuggingFace_Sentiment_Streamlit_FastAPI
+  - VisionTransformer_Streamlit_Image_Classifier
+  - CV_Streamlit_MNIST_ONNX_Digit_Classifier
+  - NLP_RAG_RFP_B2G_BidMate
+  - NLP_RAG_upstage_tax_guide_2024
+  - NLP_Whisper_video_to_txt
+
+categories:
+  "🧩 Deploy / App (서비스형 웹앱)":
+    - repo: HuggingFace_Sentiment_Streamlit_FastAPI
+      desc: "HuggingFace 감성분석 모델을 FastAPI로 서빙하고 Streamlit로 시각화한 영화 리뷰 앱"
+      stack: ["HuggingFace", "FastAPI", "Streamlit"]
+    - repo: VisionTransformer_Streamlit_Image_Classifier
+      desc: "Streamlit 웹에서 이미지 업로드/카메라 촬영 → ViT Top-K 분류 결과를 차트로 시각화"
+      stack: ["ViT", "Streamlit"]
+    - repo: CV_Streamlit_MNIST_ONNX_Digit_Classifier
+      desc: "Streamlit 캔버스 숫자 → 전처리(28x28) → ONNX 추론 → 확률 시각화/저장"
+      stack: ["ONNX", "Streamlit"]
+
+  "🧠 LLM / RAG / Speech":
+    - repo: NLP_RAG_RFP_B2G_BidMate
+      desc: "공공·기업 RFP 문서 기반 RAG: 로딩/청킹/임베딩/리트리벌 고도화 + 평가 포함"
+      stack: ["LangChain", "RAG"]
+    - repo: NLP_RAG_upstage_tax_guide_2024
+      desc: "국세청 ‘2024 연말정산 신고 안내’ PDF 기반 Q&A RAG"
+      stack: ["RAG", "PDF"]
+    - repo: NLP_Whisper_video_to_txt
+      desc: "드라마 '조각도시' 클립 대사 추출 및 ASR 분석 (OpenAI Whisper)"
+      stack: ["Whisper", "ASR"]
+
+  "📝 NLP Modeling Experiments":
+    - repo: NLP_HuggingFace_KoBART_news_summarization
+      desc: "KoBART 뉴스 요약 학습 + truncation 전략(Standard vs Head-Tail) ROUGE 비교"
+      stack: ["Transformers", "KoBART"]
+    - repo: NLP_RNN_20Newsgroups_Embedding_Compare
+      desc: "Word2Vec·FastText·GloVe 임베딩을 적용한 RNN 뉴스 카테고리 분류 비교"
+      stack: ["RNN", "Embeddings"]
+    - repo: NLP_kor_to_eng_translation_seq2seq_vs_attention
+      desc: "kor→eng 번역: Seq2Seq(GRU) vs Attention 모델 구현/학습 + BLEU 비교"
+      stack: ["Seq2Seq", "Attention"]
+    - repo: NLP_FFT_vs_PEFT_lora_sentiment_review
+      desc: "쇼핑몰 리뷰 감성분석(3-class): Full FT vs LoRA 학습시간/성능/용량 비교"
+      stack: ["LoRA", "PEFT"]
+
+  "🖼️ Computer Vision Experiments":
+    - repo: CV_DirtyDocuments_Denoising_Autoencoder_Experiment
+      desc: "손상 문서 노이즈 제거 오토인코더 + 손실/증강/구조/옵티마이저 실험"
+      stack: ["Autoencoder"]
+    - repo: CV_PneumoniaXRay_ResNet_Frozen_vs_Partial_vs_Full_Finetune
+      desc: "폐렴 분류: ResNet Transfer Learning에서 Frozen/Partial/Full Fine-Tuning 비교"
+      stack: ["ResNet", "TransferLearning"]
+    - repo: CV_ObjectDetection_SSD300_VGG16_OxfordPets_Report
+      desc: "OxfordPets 얼굴 영역 검출: SSD300(VGG16) + mAP@0.5 성능 분석"
+      stack: ["SSD", "Detection"]
+    - repo: CV_UNet_TransferLearning_GroupKFold_FootballSegmentation
+      desc: "세그멘테이션: GroupKFold 누수 방지 + ResNet34 인코더 전이학습으로 mIoU 개선"
+      stack: ["UNet", "Segmentation"]
+    - repo: CV_ResNet_cGAN_FashionMNIST_Generation
+      desc: "FashionMNIST 조건부 생성: cGAN 구현 + 학습 안정화/구조 개선으로 품질 비교"
+      stack: ["cGAN", "Generation"]
+
+  "📊 Tabular ML / EDA":
+    - repo: EDA_HotelBooking_Cancellation_Analysis
+      desc: "호텔 예약 취소율 요인 분석 + 운영 액션까지 연결한 EDA"
+      stack: ["EDA"]
+    - repo: ML_BikeSharing_Demand_RMSLE_XGBoost
+      desc: "자전거 수요 예측: 피처엔지니어링 + 로그 변환으로 RMSLE 최소화"
+      stack: ["XGBoost"]
+    - repo: ML_Bank_Telemarketing_Recall_Optimization
+      desc: "은행 마케팅 가입 예측: Recall 중심 최적화 + 클래스 불균형(SMOTE/튜닝) 개선"
+      stack: ["Imbalance", "SMOTE"]
+
+  "🐍 Python Fundamentals":
+    - repo: Python_Fundamentals_to_OOP_Exercises
+      desc: "함수/조건/반복/예외 + 클래스(OOP) 설계 점검 연습문제 모음"
+      stack: ["Python", "OOP"]
