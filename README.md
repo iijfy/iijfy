@@ -4,7 +4,6 @@
 
 ### 작동하는 코드보다, 다시 만들 수 있는 이유를 남깁니다.
 #### How보다 Why를 먼저 묻는 AI 엔지니어
-📍 Seoul, KR · ✉️ getsin@naver.com
 
 </div>
 
