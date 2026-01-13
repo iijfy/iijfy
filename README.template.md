@@ -50,9 +50,21 @@
 
 ▫️**코드잇 AI 엔지니어 부트캠프**(2025.08 → 2026.02)  
 
-- 🔄 Learning → Documenting → Shipping (원리/근거/재현 중심)
-- 🔄 RAG Document Intelligence 고도화 (retrieval / eval / grounding)
-- 🔄 AI App Deployment (FastAPI + Streamlit + Docker)
+- ✅ **ML/DL/NLP/CV 실험 ~20개 레포로 재현 가능한 형태로 정리**
+  - 임베딩 비교(Word2Vec/FastText/GloVe) → 분류(RNN)  
+  - KoBART 요약 + 전략 비교(Standard vs Head-Tail)  
+  - Full Fine-Tuning vs LoRA(PEFT) 성능/시간/용량 트레이드오프 분석  
+  - CV 실험(ResNet, UNet, SSD, Autoencoder, cGAN) 성능 비교 리포트  
+  - Tabular EDA/모델링(XGBoost, 불균형/Recall 최적화) 프로젝트
+
+- 🔄 **LLM/RAG/Agent 실전형으로 고도화 중**
+  - 문서 로딩(PDF/XML) → 청킹 → 검색(BM25/Vector) → 근거 기반 답변(grounded QA)
+  - 평가(Eval) / 근거 제시 / 환각 통제(Guardrails)까지 포함한 운영 관점 설계
+
+- 🚀 **서비스 배포/서빙 경험 축적 중**
+  - FastAPI 백엔드 + Streamlit 프론트 분리
+  - Render(백엔드) + Streamlit Cloud(프론트) 배포 파이프라인
+  - Docker 기반 로컬/배포 환경 정리
 
 ▫️**금융권 GenAI (RAG & Agent) 포트폴리오 구축**
 
