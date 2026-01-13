@@ -42,7 +42,7 @@
 
 <!-- PROJECTS_START -->
 
-## 🚀 Featured (대표 6개)
+## 🚀 GenAI Portfolio Highlights
 
 - **[NLP_RAG_upstage_tax_guide_2024](https://github.com/iijfy/NLP_RAG_upstage_tax_guide_2024)**  
   PDF 문서 기반 질의응답: 문서→청킹→검색→답변 생성 파이프라인 구성
