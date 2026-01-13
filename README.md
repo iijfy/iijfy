@@ -44,6 +44,8 @@
 
 ## 🚀 GenAI Portfolio Highlights
 
+- **[GenAI_DART_RAG_Agent](https://github.com/iijfy/GenAI_DART_RAG_Agent)**  
+  DART 공시 기반 RAG + Report Agent: 근거 인용 Q&A와 자동 리포트 생성(FastAPI + Streamlit)
 - **[NLP_RAG_upstage_tax_guide_2024](https://github.com/iijfy/NLP_RAG_upstage_tax_guide_2024)**  
   PDF 문서 기반 질의응답: 문서→청킹→검색→답변 생성 파이프라인 구성
 - **[NLP_RAG_RFP_B2G_BidMate](https://github.com/iijfy/NLP_RAG_RFP_B2G_BidMate)**  
@@ -54,14 +56,13 @@
   Whisper 기반 ASR 파이프라인: 오디오 추출→전사→타임스탬프/자막 블록 구성
 - **[VisionTransformer_Streamlit_Image_Classifier](https://github.com/iijfy/VisionTransformer_Streamlit_Image_Classifier)**  
   Streamlit 웹에서 이미지 업로드/촬영 → ViT Top-K 분류 결과를 차트로 시각화
-- **[CV_Streamlit_MNIST_ONNX_Digit_Classifier](https://github.com/iijfy/CV_Streamlit_MNIST_ONNX_Digit_Classifier)**  
-  Streamlit 캔버스 숫자 → 전처리(28x28) → ONNX 추론 → 확률 시각화/저장
 
 ## 🧭 Project Index (카테고리별)
 
 <details>
 <summary><b>🧠 GenAI Core (RAG · Agent · Eval · Guardrails)</b></summary>
 
+- [GenAI_DART_RAG_Agent](https://github.com/iijfy/GenAI_DART_RAG_Agent) `[RAG, Agent, FastAPI, Streamlit, OpenAI]` — DART 공시 기반 RAG + Report Agent: 근거 인용 Q&A와 자동 리포트 생성(FastAPI + Streamlit)
 - [NLP_RAG_upstage_tax_guide_2024](https://github.com/iijfy/NLP_RAG_upstage_tax_guide_2024) `[PDF, Chunking, RAG]` — PDF 문서 기반 질의응답: 문서→청킹→검색→답변 생성 파이프라인 구성
 - [NLP_RAG_RFP_B2G_BidMate](https://github.com/iijfy/NLP_RAG_RFP_B2G_BidMate) `[Chunking, Retrieval, RAG]` — 문서 구조 기반 로딩/청킹 전략 실험(Recursive/Semantic 등)으로 검색 품질 개선
 
