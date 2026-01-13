@@ -46,13 +46,19 @@
 
 ---
 
-## 📌 In Progress (2025.08 → 2026.02)
+## 📌 In Progress 
 
-▫️**코드잇 AI 엔지니어 부트캠프**  
+▫️**코드잇 AI 엔지니어 부트캠프**(2025.08 → 2026.02)  
 
 - 🔄 Learning → Documenting → Shipping (원리/근거/재현 중심)
 - 🔄 RAG Document Intelligence 고도화 (retrieval / eval / grounding)
 - 🔄 AI App Deployment (FastAPI + Streamlit + Docker)
+
+▫️**금융권 GenAI (RAG & Agent) 포트폴리오 구축**
+
+- 🧾 금융 공시/약관/내규 등 **한글 문서 기반 RAG**로 *근거 있는 답변(grounded QA)* 구현
+- 🤖 반복 업무를 **Agent/Workflow로 자동화** (검색 → 추출 → 요약/리포트 생성)
+- 📏 **평가(Eval) + 근거 제시 + 환각 통제(Guardrails)**까지 포함해 “운영 가능한” 형태로 배포 실험 중
 
 ---
 
