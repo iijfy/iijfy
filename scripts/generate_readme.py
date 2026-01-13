@@ -22,7 +22,7 @@ def repo_url(username: str, repo: str) -> str:
 
 def render_featured(username: str, featured: list[str], repo_meta: dict[str, dict]) -> str:
     lines = []
-    lines.append("## 🚀 Featured (대표 6개)\n")
+    lines.append("## 🚀 GenAI Portfolio Highlights\n")
     for r in featured:
         meta = repo_meta.get(r, {})
         desc = meta.get("desc", "").strip()
