@@ -2,15 +2,19 @@ username: iijfy
 
 # ✅ 대표 6개: 금융권 GenAI 시그널이 먼저 나오도록 재정렬
 featured:
+  - GenAI_DART_RAG_Agent
   - NLP_RAG_upstage_tax_guide_2024
   - NLP_RAG_RFP_B2G_BidMate
   - HuggingFace_Sentiment_Streamlit_FastAPI
   - NLP_Whisper_video_to_txt
   - VisionTransformer_Streamlit_Image_Classifier
-  - CV_Streamlit_MNIST_ONNX_Digit_Classifier
+
 
 categories:
   "🧠 GenAI Core (RAG · Agent · Eval · Guardrails)":
+    - repo: GenAI_DART_RAG_Agent
+      desc: "DART 공시 기반 RAG + Report Agent: 근거 인용 Q&A와 자동 리포트 생성(FastAPI + Streamlit)"
+      stack: ["RAG", "Agent", "FastAPI", "Streamlit", "OpenAI"]
     - repo: NLP_RAG_upstage_tax_guide_2024
       desc: "국세청 ‘2024 연말정산 신고 안내’ PDF 기반 Q&A RAG — 문서 근거 중심 답변 설계"
       stack: ["RAG", "PDF", "Grounding"]
