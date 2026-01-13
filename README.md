@@ -155,9 +155,9 @@
   - International Business & Marketing
 
 ▫️**Experience**
-- 미디어포스 얼라이언스(M4A) — UX 신한은행 리뉴얼  
-- 아싸겟 / 핏보소 / 씨리얼 스튜디오 — 이커머스/운영 및 공간대여  
-- Morgan Universal Media Contents — K컨텐츠 제작·해외배급 / MCN 광고 제작
+- 미디어포스 얼라이언스(M4A) — UX 신한은행 앱 리뉴얼  
+- 아싸겟 / 핏보소 / 씨리얼 스튜디오 — (창업)E-Commerce 및 공간 대여  
+- Morgan Universal Media Contents — (창업)K컨텐츠 제작·해외배급 / MCN 등 소상공인 광고대행 
 - 영앤컨텐츠 - K컨텐츠 해외배급 / 나라장터 등 지원사업 입찰&발표
 - PlayOnCast - K컨텐츠 재제작 / K컨텐츠 해외배급  
 - 초록뱀미디어 — 드라마사업본부  
