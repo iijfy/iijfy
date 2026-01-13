@@ -1,51 +1,64 @@
 username: iijfy
 
+# ✅ 대표 6개: 금융권 GenAI 시그널이 먼저 나오도록 재정렬
 featured:
+  - NLP_RAG_upstage_tax_guide_2024
+  - NLP_RAG_RFP_B2G_BidMate
   - HuggingFace_Sentiment_Streamlit_FastAPI
+  - NLP_Whisper_video_to_txt
   - VisionTransformer_Streamlit_Image_Classifier
   - CV_Streamlit_MNIST_ONNX_Digit_Classifier
-  - NLP_RAG_RFP_B2G_BidMate
-  - NLP_RAG_upstage_tax_guide_2024
-  - NLP_Whisper_video_to_txt
 
 categories:
-  "🧩 Deploy / App (서비스형 웹앱)":
+  "🧠 GenAI Core (RAG · Agent · Eval · Guardrails)":
+    - repo: NLP_RAG_upstage_tax_guide_2024
+      desc: "국세청 ‘2024 연말정산 신고 안내’ PDF 기반 Q&A RAG — 문서 근거 중심 답변 설계"
+      stack: ["RAG", "PDF", "Grounding"]
+    - repo: NLP_RAG_RFP_B2G_BidMate
+      desc: "공공·기업 RFP 문서 기반 RAG — 로딩/청킹/리트리벌 고도화 + 평가 포함 (컨설팅 문서 플로우)"
+      stack: ["LangChain", "RAG", "Evaluation"]
+    # ⚠️ 지금 Agent 전용 레포가 없어서, '향후 확장'을 암시만 해두는 정도
+    # 나중에 Agent 레포 만들면 여기 최상단에 추가하면 됨.
+
+  "📄 Document Intelligence (PDF/문서 파싱·청킹·검색)":
+    - repo: NLP_RAG_RFP_B2G_BidMate
+      desc: "문서 구조 기반 로딩/청킹 전략 실험(Recursive/Semantic 등)으로 검색 품질 개선"
+      stack: ["Chunking", "Retrieval", "RAG"]
+    - repo: NLP_RAG_upstage_tax_guide_2024
+      desc: "PDF 문서 기반 질의응답: 문서→청킹→검색→답변 생성 파이프라인 구성"
+      stack: ["PDF", "Chunking", "RAG"]
+
+  "🚀 Deployment / Apps (PoC → 서비스 형태로 구현)":
     - repo: HuggingFace_Sentiment_Streamlit_FastAPI
-      desc: "HuggingFace 감성분석 모델을 FastAPI로 서빙하고 Streamlit로 시각화한 영화 리뷰 앱"
+      desc: "모델(Fine-tuned Sentiment)을 FastAPI로 서빙하고 Streamlit로 시각화한 웹앱 (엔드투엔드 배포 경험)"
       stack: ["HuggingFace", "FastAPI", "Streamlit"]
     - repo: VisionTransformer_Streamlit_Image_Classifier
-      desc: "Streamlit 웹에서 이미지 업로드/카메라 촬영 → ViT Top-K 분류 결과를 차트로 시각화"
+      desc: "Streamlit 웹에서 이미지 업로드/촬영 → ViT Top-K 분류 결과를 차트로 시각화"
       stack: ["ViT", "Streamlit"]
     - repo: CV_Streamlit_MNIST_ONNX_Digit_Classifier
       desc: "Streamlit 캔버스 숫자 → 전처리(28x28) → ONNX 추론 → 확률 시각화/저장"
       stack: ["ONNX", "Streamlit"]
 
-  "🧠 LLM / RAG / Speech":
-    - repo: NLP_RAG_RFP_B2G_BidMate
-      desc: "공공·기업 RFP 문서 기반 RAG: 로딩/청킹/임베딩/리트리벌 고도화 + 평가 포함"
-      stack: ["LangChain", "RAG"]
-    - repo: NLP_RAG_upstage_tax_guide_2024
-      desc: "국세청 ‘2024 연말정산 신고 안내’ PDF 기반 Q&A RAG"
-      stack: ["RAG", "PDF"]
+  "🗣️ Speech / Pipeline (멀티모달 파이프라인 경험)":
     - repo: NLP_Whisper_video_to_txt
-      desc: "드라마 '조각도시' 클립 대사 추출 및 ASR 분석 (OpenAI Whisper)"
-      stack: ["Whisper", "ASR"]
+      desc: "Whisper 기반 ASR 파이프라인: 오디오 추출→전사→타임스탬프/자막 블록 구성"
+      stack: ["Whisper", "ASR", "Pipeline"]
 
-  "📝 NLP Modeling Experiments":
+  "🧪 NLP Experiments (모델링/학습 실험)":
     - repo: NLP_HuggingFace_KoBART_news_summarization
-      desc: "KoBART 뉴스 요약 학습 + truncation 전략(Standard vs Head-Tail) ROUGE 비교"
-      stack: ["Transformers", "KoBART"]
+      desc: "KoBART 뉴스 요약 학습 + truncation 전략(Standard vs Head-Tail) 비교 (ROUGE)"
+      stack: ["Transformers", "KoBART", "ROUGE"]
+    - repo: NLP_FFT_vs_PEFT_lora_sentiment_review
+      desc: "쇼핑몰 리뷰 감성분석(3-class): Full FT vs LoRA 학습시간/성능/용량 비교"
+      stack: ["LoRA", "PEFT", "Fine-tuning"]
+    - repo: NLP_kor_to_eng_translation_seq2seq_vs_attention
+      desc: "kor→eng 번역: Seq2Seq(GRU) vs Attention 모델 구현/학습 + BLEU 비교"
+      stack: ["Seq2Seq", "Attention", "BLEU"]
     - repo: NLP_RNN_20Newsgroups_Embedding_Compare
       desc: "Word2Vec·FastText·GloVe 임베딩을 적용한 RNN 뉴스 카테고리 분류 비교"
       stack: ["RNN", "Embeddings"]
-    - repo: NLP_kor_to_eng_translation_seq2seq_vs_attention
-      desc: "kor→eng 번역: Seq2Seq(GRU) vs Attention 모델 구현/학습 + BLEU 비교"
-      stack: ["Seq2Seq", "Attention"]
-    - repo: NLP_FFT_vs_PEFT_lora_sentiment_review
-      desc: "쇼핑몰 리뷰 감성분석(3-class): Full FT vs LoRA 학습시간/성능/용량 비교"
-      stack: ["LoRA", "PEFT"]
 
-  "🖼️ Computer Vision Experiments":
+  "🖼️ CV Experiments (비전 모델 실험)":
     - repo: CV_DirtyDocuments_Denoising_Autoencoder_Experiment
       desc: "손상 문서 노이즈 제거 오토인코더 + 손실/증강/구조/옵티마이저 실험"
       stack: ["Autoencoder"]
@@ -62,18 +75,18 @@ categories:
       desc: "FashionMNIST 조건부 생성: cGAN 구현 + 학습 안정화/구조 개선으로 품질 비교"
       stack: ["cGAN", "Generation"]
 
-  "📊 Tabular ML / EDA":
+  "📊 Tabular / EDA (데이터 분석/모델링)":
+    - repo: ML_Bank_Telemarketing_Recall_Optimization
+      desc: "은행 마케팅 가입 예측: Recall 중심 최적화 + 클래스 불균형(SMOTE/튜닝) 개선"
+      stack: ["Tabular", "Recall", "SMOTE"]
+    - repo: ML_BikeSharing_Demand_RMSLE_XGBoost
+      desc: "자전거 수요 예측: 피처엔지니어링 + 로그 변환으로 RMSLE 최소화"
+      stack: ["XGBoost", "RMSLE"]
     - repo: EDA_HotelBooking_Cancellation_Analysis
       desc: "호텔 예약 취소율 요인 분석 + 운영 액션까지 연결한 EDA"
       stack: ["EDA"]
-    - repo: ML_BikeSharing_Demand_RMSLE_XGBoost
-      desc: "자전거 수요 예측: 피처엔지니어링 + 로그 변환으로 RMSLE 최소화"
-      stack: ["XGBoost"]
-    - repo: ML_Bank_Telemarketing_Recall_Optimization
-      desc: "은행 마케팅 가입 예측: Recall 중심 최적화 + 클래스 불균형(SMOTE/튜닝) 개선"
-      stack: ["Imbalance", "SMOTE"]
 
-  "🐍 Python Fundamentals":
+  "🐍 Fundamentals (Python)":
     - repo: Python_Fundamentals_to_OOP_Exercises
       desc: "함수/조건/반복/예외 + 클래스(OOP) 설계 점검 연습문제 모음"
       stack: ["Python", "OOP"]
